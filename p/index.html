@@ -3,5 +3,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <h1>Hi.</h1>
 <script>
-
+  var getUrlString = location.href;
+var url = new URL(getUrlString);
+var pageid = url.searchParams.get('id') ;
+history.pushState(null, null,'https://erichsia7.github.io/post/p/' + pageid);
 </script>
